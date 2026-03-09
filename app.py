@@ -4,7 +4,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 import streamlit as st
 from google import genai
 import os
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCwFvbC1cce-JLu5XYogzdeDx4Iu9BzfPw"
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY") or st.secrets.get("GOOGLE_API_KEY")
 from google.generativeai.types import (
     BlockedPromptException,
     StopCandidateException,
