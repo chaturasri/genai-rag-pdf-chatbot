@@ -1,9 +1,12 @@
 streamlit
-google-generativeai
-python-dotenv
+PyPDF2
 langchain
-PyPDF2>=3.0.0
-faiss-cpu
-langchain_google_genai
 langchain-community
+langchain-core
 langchain-text-splitters
+langchain-google-genai
+langchain-huggingface
+faiss-cpu
+sentence-transformers
+python-dotenv
+google-generativeai
